@@ -13,4 +13,12 @@
      $$Q(s_t,a_t)\gets Q(s_t,a_t)+\alpha \overset{temperary\quad difference}{\overbrace{\left[ \underset{new\quad \quad value\quad \quad \left( temperol\quad difference\quad target \right)}{\underbrace{r_{t+1}+\gamma \max_a Q(s_{t+1},a)}}-Q(s_t,a_t) \right] }}$$
 - 环境
   常被假设为 **马尔可夫决策过程** ，只关注于未来的状态影响
-- **MDP假设** 下，控制去逼近最优贝尔曼方程解的闭环控制
+- 离线训练过程：
+  - **MDP假设** 下，去逼近最优贝尔曼方程解的闭环反馈控制 $u=C(x|MDP)$
+  - **Real World环境下** ,不满足MDP/“没见过”场景 $u=C(x|MDP)$ "开环"
+- 常见的闭环控制：
+  - 辨识
+  - 电池
+  - 通信
+  - 定位
+  - 游戏
