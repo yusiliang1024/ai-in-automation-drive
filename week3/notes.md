@@ -12,5 +12,5 @@
   通过当前值来更新当前状态下的最优控制  
      $$Q(s_t,a_t)\gets Q(s_t,a_t)+\alpha \overset{temperary\,difference}{\overbrace{\left[ \underset{new\,\,value\,\,\left( temperary\,difference\,target \right)}{\underbrace{r_{t+1}+\gamma \max_a Q(s_{t+1},a)}}-Q(s_t,a_t) \right] }}$$
 - 环境
-  常被假设为马尔可夫决策过程，只关注于未来的状态影响
+  常被假设为 **马尔可夫决策过程** ，只关注于未来的状态影响
 - MDP假设下，控制去逼近最优贝尔曼方程解的闭环控制
